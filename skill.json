@@ -1,0 +1,33 @@
+{
+  "name": "genpark-adaptive-semantic-chunking-router-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Adaptive semantic text boundary chunker partitioning raw RAG documents into coherence-optimized window chunks with contextual overlaps.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "rag-infrastructure",
+  "tags": [
+    "semantic-chunking",
+    "rag-optimization",
+    "text-splitter",
+    "document-chunker",
+    "vector-index"
+  ],
+  "inputs": {
+    "document_text": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "router_id": {
+      "type": "string"
+    },
+    "generated_chunks_count": {
+      "type": "integer"
+    },
+    "semantic_chunks": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
